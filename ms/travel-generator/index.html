@@ -3,17 +3,17 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Penjana Destinasi Perjalanan Rawak</title>
-<meta name="description" content="Penjana destinasi pelancongan rawak percuma. Hasil segera, berfungsi dalam penyemak imbas anda.">
-<meta property="og:title" content="Penjana Destinasi Perjalanan Rawak">
-<meta property="og:description" content="Penjana destinasi pelancongan rawak percuma. Hasil segera, berfungsi dalam penyemak imbas anda.">
+<title>Random Travel Destination Generator</title>
+<meta name="description" content="Free random travel destination generator. Instant results, works in your browser.">
+<meta property="og:title" content="Random Travel Destination Generator">
+<meta property="og:description" content="Free random travel destination generator. Instant results, works in your browser.">
 <meta property="og:type" content="website">
 <link rel="canonical" href="https://omnitools.app/ms/travel-generator/">
 <link rel="alternate" hreflang="ms" href="https://omnitools.app/ms/travel-generator/">
 <link rel="alternate" hreflang="x-default" href="https://omnitools.app/en/travel-generator/">
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"WebApplication",
-  "name":"Penjana Destinasi Perjalanan Rawak","description":"Penjana destinasi pelancongan rawak percuma. Hasil segera, berfungsi dalam penyemak imbas anda.",
+  "name":"Random Travel Destination Generator","description":"Free random travel destination generator. Instant results, works in your browser.",
   "applicationCategory":"UtilitiesApplication","operatingSystem":"Any",
   "offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}}
 </script>
@@ -60,37 +60,51 @@ input:focus,select:focus,textarea:focus{outline:none;border-color:var(--accent)}
 </head>
 <body>
 <div class="wrap">
-  <nav><a href="/ms/">&#8592; Rumah</a></nav>
+  <nav><a href="/ms/">&#8592; Hōmu</a></nav>
   <div class="ad" id="ad-top">[Advertisement]</div>
   <div class="card">
-    <h1>Penjana Destinasi Perjalanan Rawak</h1>
-    <p class="desc">Penjana destinasi pelancongan rawak percuma. Hasil segera, berfungsi dalam penyemak imbas anda.</p>
+    <h1>Random Travel Destination Generator</h1>
+    <p class="desc">Free random travel destination generator. Instant results, works in your browser.</p>
     <div class="result-box" id="result">&#10024;</div>
-    <button class="btn" onclick="gen()">Menjana</button>
-    <button class="btn btn-wa" onclick="shareWA()">&#128242; Kongsi di WhatsApp</button>
+    <button class="btn" onclick="gen()">Jenerezu</button>
+    <button class="btn btn-wa" onclick="shareWA()">&#128242; Shar o Wahwatt</button>
     <div class="hist" id="hist"></div>
   </div>
   <div class="ad" id="ad-mid">[Advertisement]</div>
   <div class="seo-card">
     <h2>&#9432; About</h2>
-    <div>Cara menggunakan Penjana Destinasi Perjalanan Rawak:
-1. Klik butang untuk mendapatkan hasil segera.
-2. Klik sekali lagi untuk keputusan baharu.
-3. Salin atau kongsi apa yang anda suka.
+    <div>Panduan Menggunakan Alat "Penghasil Destinasi Perjalanan Acak" secara Percuma
 
-Alat ini 100% percuma. Ia berfungsi sepenuhnya dalam penyemak imbas anda. Tiada akaun diperlukan. Tiada data dimuat naik.</div>
+Alat "Penghasil Destinasi Perjalanan Acak" adalah sebuah alat percuma di dalam talian yang dapat membantu anda mencari destinasi perjalanan yang menarik dan tidak pernah diduga. Ia dapat membantu anda meluangkan masa cuti yang lebih bermakna dan tidak membosankan.
+
+Langkah-Langkah Menggunakan Alat:
+
+1. Terlebih dahulu, sila lawati laman web "Penghasil Destinasi Perjalanan Acak" dan klik pada butang "Mulakan".
+2. Setelah itu, anda boleh memilih jenis destinasi perjalanan yang dikehendaki, seperti pantai, bandar, atau gunung.
+3. Terakhir, klik pada butang "Cari" untuk mendapatkan destinasi perjalanan acak yang sesuai dengan pilihan anda.
+
+Alat ini sangat berguna bagi pengguna Malaysia kerana dapat membantu mereka mencari destinasi perjalanan yang lebih menarik dan tidak membosankan. Selain itu, alat ini juga boleh membantu mereka mengelakkan keputusan perjalanan yang sama berulang-ulang.
+
+Faq:
+
+ - Apakah alat ini percuma?
+ Ya, alat ini memang percuma dan boleh digunakan oleh semua orang.
+ - Bolehkah saya menggunakannya di telefon bimbit saya?
+ Ya, alat ini boleh digunakan di telefon bimbit anda dan boleh diakses melalui laman web.
+ - Bolehkah saya menyimpan destinasi perjalanan yang saya cari?
+ Ya, anda boleh menyimpan destinasi perjalanan yang anda cari dan boleh menggunakannya kemudian.</div>
   </div>
   <div class="ad" id="ad-bot">[Advertisement]</div>
   <footer>
     <a href="/privacy.html">Privacy</a>
     <a href="/terms.html">Terms</a>
-    <a href="/ms/">Rumah</a>
+    <a href="/ms/">Hōmu</a>
   </footer>
 </div>
 <script>
-const D=["Kepulauan Faroe — tebing liar dan kesunyian Viking", "Tbilisi, Georgia — wain purba dan bandar gua", "Kotor, Montenegro — teluk zaman pertengahan yang dikelilingi oleh pergunungan", "Chefchaouen, Maghribi — kampung biru yang terkenal", "Luang Prabang, Laos — kuil emas pada waktu subuh", "Svaneti, Georgia - menara batu purba di Caucasus", "Noto, Sicily — Katedral Baroque dan pastri badam", "Plovdiv, Bulgaria — bandar tertua yang terus didiami di Eropah", "Mostar, Bosnia — jambatan Stari Most yang ikonik", "Huacachina, Peru — Oasis dikelilingi oleh bukit pasir", "Pulau Socotra, Yaman — pokok darah naga asing", "Madeira, Portugal — musim bunga abadi di pulau gunung berapi", "Hvar, Croatia — padang lavender dan laut yang jernih", "Valletta, Malta — modal kecil, sejarah barok yang besar", "Hallstatt, Austria — kampung tasik yang sempurna poskad", "Bagan, Myanmar — 3000 pagoda purba pada waktu matahari terbit", "Cappadocia, Turki — belon udara panas di atas cerobong dongeng", "Sintra, Portugal — istana dongeng di dalam hutan", "Colmar, Alsace — kampung dongeng sebenar", "Okinawa, Jepun — terumbu karang dan runtuhan istana Ryukyu", "Transylvania, Romania — bandar zaman pertengahan dan beruang gunung", "Pulau Flores, Indonesia — pantai merah jambu dan komodo", "Göreme, Turki — bandar bawah tanah dan gereja gua", "Jiufen, Taiwan — rumah teh gunung yang diterangi lampu tanglung", "Meteora, Greece — biara di atas batu menegak"];
+const D=["Føroyar - fjall og víkingarsæn", "თბილისი, საქართველო — ძუნი მწყერლით და განიზის ციხები", "Kotor, Crna Gora - starinska luka okružena planinama", "Chefchaouen, Morocco — el makhya al azblue", "Luang Prabang, Laos — khong teb khoua jai", "სვანეთი, საქართველო — ძუცხუჭი შილები კაჩის", "Noto, Sicilia - Barocchi cattedrali e dolci di mandorla", "Plovdiv, Bulgaria — najstariji kontinuo upravljan city v Evropi", "Mostar, Bosnia — most stari most", "Huacachina, Peru — oasys surrounded by desert dunes", "Socotra Island, Yemen — al-yunyan", "Madeira, Portugal — eternal spring na isla volcánica", "Hvar, Croatia — lavandula polja i kristalni čisti mors", "Valletta, Malta — tiny capital, huge baroque history", "Hallstatt, Österreich — die idyllische See-Dorf", "Bagan, Myanmar — 3000 ancient pagoda at sunrise", "Kapadokya, Türkiye - sıcaklıkta balonlar, perin kaya mevcutları", "Sintra, Portugal — palácios de conto de fadas na floresta", "Kolmar, Alzayt — la vilya taile fayree", "Okinawa, Nihon — koraru reefu to Ryūkyū kaisen no jujō", "Transilvania, România - orașe medievale și urși de munte", "Flores Island, Indonesia — pulau merah pantai dan komodo", "Göreme, Turkey — underground cities and cave churches", "Jiufen, Taiwan - (lan-tan li) (tsoo) (hwa)", "Μέτεωρα, Ελλάδα — μοναστήρια σε στρώμα vertical rock"];
 const H=[];
-const SM="Alat percuma: Penjana Destinasi Perjalanan Rawak";
+const SM="Free tool: Random Travel Destination Generator";
 function gen(){
   const r=D[Math.floor(Math.random()*D.length)];
   const el=document.getElementById('result');

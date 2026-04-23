@@ -3,12 +3,12 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>ওয়ার্ড কাউন্টার — শব্দের অক্ষর বাক্য</title>
-<meta name="description" content="বিনামূল্যে শব্দ পাল্টা - শব্দ অক্ষর বাক্য. তাত্ক্ষণিক এবং ব্যক্তিগত, ব্রাউজার-ভিত্তিক।">
+<title>শব্দ গণনা — শব্দ চিহ্ন বাক্য</title>
+<meta name="description" content="অনন্য শব্দ গণনা - শব্দ চিহ্ন বাক্য। তথ্যমুক্ত, স্বয়ংসম্পূর্ণ, ব্রাউজার-ভিত্তিক">
 <link rel="canonical" href="https://omnitools.app/bn/word-counter/">
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"WebApplication",
-  "name":"ওয়ার্ড কাউন্টার — শব্দের অক্ষর বাক্য","description":"বিনামূল্যে শব্দ পাল্টা - শব্দ অক্ষর বাক্য. তাত্ক্ষণিক এবং ব্যক্তিগত, ব্রাউজার-ভিত্তিক।",
+  "name":"শব্দ গণনা — শব্দ চিহ্ন বাক্য","description":"অনন্য শব্দ গণনা - শব্দ চিহ্ন বাক্য। তথ্যমুক্ত, স্বয়ংসম্পূর্ণ, ব্রাউজার-ভিত্তিক",
   "applicationCategory":"UtilitiesApplication","operatingSystem":"Any",
   "offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}}
 </script>
@@ -55,24 +55,31 @@ input:focus,select:focus,textarea:focus{outline:none;border-color:var(--accent)}
 </head>
 <body>
 <div class="wrap">
-  <nav><a href="/bn/">&#8592; বাড়ি</a></nav>
+  <nav><a href="/bn/">&#8592; ঘর</a></nav>
   <div class="ad">[Advertisement]</div>
   <div class="card">
-    <h1>ওয়ার্ড কাউন্টার — শব্দের অক্ষর বাক্য</h1>
-    <p class="desc">বিনামূল্যে শব্দ পাল্টা - শব্দ অক্ষর বাক্য. তাত্ক্ষণিক এবং ব্যক্তিগত, ব্রাউজার-ভিত্তিক।</p>
-    <textarea id="txt" placeholder="এখানে আপনার পাঠ্য পেস্ট বা টাইপ করুন..." style="height:150px;margin-bottom:14px"></textarea><div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:10px"><div style="background:#0b0c0e;padding:10px;border-radius:8px;text-align:center"><div style="font-size:1.5rem;font-weight:800;color:var(--accent)" id="wc">0</div><div style="font-size:.75rem;color:var(--muted)">শব্দ</div></div><div style="background:#0b0c0e;padding:10px;border-radius:8px;text-align:center"><div style="font-size:1.5rem;font-weight:800;color:var(--accent)" id="cc">0</div><div style="font-size:.75rem;color:var(--muted)">অক্ষর</div></div><div style="background:#0b0c0e;padding:10px;border-radius:8px;text-align:center"><div style="font-size:1.5rem;font-weight:800;color:var(--accent)" id="sc">0</div><div style="font-size:.75rem;color:var(--muted)">বাক্য</div></div><div style="background:#0b0c0e;padding:10px;border-radius:8px;text-align:center"><div style="font-size:1.5rem;font-weight:800;color:var(--accent)" id="pc">0</div><div style="font-size:.75rem;color:var(--muted)">অনুচ্ছেদ</div></div></div>
+    <h1>শব্দ গণনা — শব্দ চিহ্ন বাক্য</h1>
+    <p class="desc">অনন্য শব্দ গণনা - শব্দ চিহ্ন বাক্য। তথ্যমুক্ত, স্বয়ংসম্পূর্ণ, ব্রাউজার-ভিত্তিক</p>
+    <textarea id="txt" placeholder="পেস্ট বা তৈরি করুন এবং আপনার লিখিত দৃশ্য হওয়ার জন্য অথবা" style="height:150px;margin-bottom:14px"></textarea><div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:10px"><div style="background:#0b0c0e;padding:10px;border-radius:8px;text-align:center"><div style="font-size:1.5rem;font-weight:800;color:var(--accent)" id="wc">0</div><div style="font-size:.75rem;color:var(--muted)">শব্দ</div></div><div style="background:#0b0c0e;padding:10px;border-radius:8px;text-align:center"><div style="font-size:1.5rem;font-weight:800;color:var(--accent)" id="cc">0</div><div style="font-size:.75rem;color:var(--muted)">চরিত্র</div></div><div style="background:#0b0c0e;padding:10px;border-radius:8px;text-align:center"><div style="font-size:1.5rem;font-weight:800;color:var(--accent)" id="sc">0</div><div style="font-size:.75rem;color:var(--muted)">বিশেষভাবে</div></div><div style="background:#0b0c0e;padding:10px;border-radius:8px;text-align:center"><div style="font-size:1.5rem;font-weight:800;color:var(--accent)" id="pc">0</div><div style="font-size:.75rem;color:var(--muted)">অধ্যায়</div></div></div>
     <div id="calc-result">—</div>
-    <button class="btn" onclick="calculate()">হিসাব করুন</button>
+    <button class="btn" onclick="calculate()">গণনা করুন</button>
   </div>
   <div class="ad">[Advertisement]</div>
   <div class="seo-card">
     <h2>&#9432; About</h2>
-    <div>ওয়ার্ড কাউন্টার কীভাবে ব্যবহার করবেন — শব্দের অক্ষর বাক্য:
-1. একটি তাত্ক্ষণিক ফলাফল পেতে বোতামটি ক্লিক করুন৷
-2. একটি নতুন ফলাফলের জন্য আবার ক্লিক করুন.
-3. আপনি যা পছন্দ করেন তা অনুলিপি করুন বা ভাগ করুন৷
+    <div>শুরু
 
-এই টুল 100% বিনামূল্যে. এটি সম্পূর্ণরূপে আপনার ব্রাউজারে কাজ করে। কোনো অ্যাকাউন্টের প্রয়োজন নেই। কোন তথ্য আপলোড করা হয় না.</div>
+প্রয়োজনীয় শব্দ গণনা করার জন্য একটি সহজ, সুবিধাজনক ওয়েব টুল হল ওয়ার্ড কাউন্টার। এই টুলটি ব্যবহার করে আপনি সহজেই একটি টেক্সটের শব্দ, অক্ষর এবং বাক্যের সংখ্যা গণনা করতে পারবেন।
+
+কাজ করার জন্য ৩টি ধাপ আছে:
+
+১. ওয়েব সাইটে যান: প্রথমত, ওয়ার্ড কাউন্টার ওয়েব সাইটে যান। ভিন্ন সংস্করণের জন্য বিভিন্ন লিঙ্ক রয়েছে, যেমন, ক্যাপচা, অক্ষর এবং বাক্য কাউন্টার ইত্যাদি।
+
+২. টেক্সট পেস্ট করুন: পরবর্তী, টেক্সট বক্সে আপনার টেক্সট পেস্ট করুন। আপনি একটি ফাইল থেকে টেক্সট কপি করেও অনুমতি পেতে পারেন।
+
+৩. গণনা করুন: অবশেষে, কাউন্ট বাটনে ক্লিক করুন এবং টেক্সটের শব্দ, অক্ষর এবং বাক্যের সংখ্যা দেখুন।
+
+এই ওয়েব টুলটি বাংলা ব্যবহারকারীদের জন্য বিশেষভাবে সুবিধাজনক কারণ এটি ব</div>
   </div>
   <footer>
     <a href="/privacy.html">Privacy</a>

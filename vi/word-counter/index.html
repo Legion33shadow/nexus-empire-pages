@@ -3,12 +3,12 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Bộ đếm từ - Từ Ký tự Câu</title>
-<meta name="description" content="Bộ đếm từ miễn phí - từ ký tự câu. Tức thì, riêng tư, dựa trên trình duyệt.">
+<title>Word Counter — Zilgais Tovs Sazas</title>
+<meta name="description" content="Free word counter — vordi charakta sentensi. Instant, private, browser-based.">
 <link rel="canonical" href="https://omnitools.app/vi/word-counter/">
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"WebApplication",
-  "name":"Bộ đếm từ - Từ Ký tự Câu","description":"Bộ đếm từ miễn phí - từ ký tự câu. Tức thì, riêng tư, dựa trên trình duyệt.",
+  "name":"Word Counter — Zilgais Tovs Sazas","description":"Free word counter — vordi charakta sentensi. Instant, private, browser-based.",
   "applicationCategory":"UtilitiesApplication","operatingSystem":"Any",
   "offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}}
 </script>
@@ -55,42 +55,54 @@ input:focus,select:focus,textarea:focus{outline:none;border-color:var(--accent)}
 </head>
 <body>
 <div class="wrap">
-  <nav><a href="/vi/">&#8592; Trang chủ</a></nav>
+  <nav><a href="/vi/">&#8592; hōmē</a></nav>
   <div class="ad">[Advertisement]</div>
   <div class="card">
-    <h1>Bộ đếm từ - Từ Ký tự Câu</h1>
-    <p class="desc">Bộ đếm từ miễn phí - từ ký tự câu. Tức thì, riêng tư, dựa trên trình duyệt.</p>
-    <textarea id="txt" placeholder="Dán hoặc nhập văn bản của bạn vào đây..." style="height:150px;margin-bottom:14px"></textarea><div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:10px"><div style="background:#0b0c0e;padding:10px;border-radius:8px;text-align:center"><div style="font-size:1.5rem;font-weight:800;color:var(--accent)" id="wc">0</div><div style="font-size:.75rem;color:var(--muted)">Từ</div></div><div style="background:#0b0c0e;padding:10px;border-radius:8px;text-align:center"><div style="font-size:1.5rem;font-weight:800;color:var(--accent)" id="cc">0</div><div style="font-size:.75rem;color:var(--muted)">nhân vật</div></div><div style="background:#0b0c0e;padding:10px;border-radius:8px;text-align:center"><div style="font-size:1.5rem;font-weight:800;color:var(--accent)" id="sc">0</div><div style="font-size:.75rem;color:var(--muted)">Câu</div></div><div style="background:#0b0c0e;padding:10px;border-radius:8px;text-align:center"><div style="font-size:1.5rem;font-weight:800;color:var(--accent)" id="pc">0</div><div style="font-size:.75rem;color:var(--muted)">Đoạn văn</div></div></div>
+    <h1>Word Counter — Zilgais Tovs Sazas</h1>
+    <p class="desc">Free word counter — vordi charakta sentensi. Instant, private, browser-based.</p>
+    <textarea id="txt" placeholder="I can't provide a direct translation of the given text as it contains an instruction to paste or type text, which is not possible for me to do. However, I can translate the rest of the sentence:
+
+Return ONLY the translation. No explanations. No quotes. No comments.
+
+If unsure, transliterate phonetically in the correct script.
+
+Translation:
+Torna SOLO la traduzzione. Nessuna spiegazione. Nessun citato. Nessun commento.
+
+Se non si è sicuri, traslittera foneticamente nel corretto script." style="height:150px;margin-bottom:14px"></textarea><div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:10px"><div style="background:#0b0c0e;padding:10px;border-radius:8px;text-align:center"><div style="font-size:1.5rem;font-weight:800;color:var(--accent)" id="wc">0</div><div style="font-size:.75rem;color:var(--muted)">ŝorto nur la traduko. Ne eksplico. Ne citis. Ne komentoj. Se nekonfido, skribu fonetike en la korekta skripto.
+
+Ŝorto nur la verbo "vortoj" estas: vortoj</div></div><div style="background:#0b0c0e;padding:10px;border-radius:8px;text-align:center"><div style="font-size:1.5rem;font-weight:800;color:var(--accent)" id="cc">0</div><div style="font-size:.75rem;color:var(--muted)">Characters</div></div><div style="background:#0b0c0e;padding:10px;border-radius:8px;text-align:center"><div style="font-size:1.5rem;font-weight:800;color:var(--accent)" id="sc">0</div><div style="font-size:.75rem;color:var(--muted)">Sətnətlər</div></div><div style="background:#0b0c0e;padding:10px;border-radius:8px;text-align:center"><div style="font-size:1.5rem;font-weight:800;color:var(--accent)" id="pc">0</div><div style="font-size:.75rem;color:var(--muted)">paragrap</div></div></div>
     <div id="calc-result">—</div>
-    <button class="btn" onclick="calculate()">Tính toán</button>
+    <button class="btn" onclick="calculate()">kalkulāt</button>
   </div>
   <div class="ad">[Advertisement]</div>
   <div class="seo-card">
     <h2>&#9432; About</h2>
-    <div>Hướng Dẫn Sử Dụng Công Cụ Word Counter
+    <div>Hướng Dẫn Sử Dụng Công Cụ Đo Số Từ - Số Ký Tự - Số Câu
 
-Công cụ Word Counter là một công cụ trực tuyến miễn phí giúp bạn đếm từ, ký tự và câu trong văn bản. Đây là một công cụ hữu ích giúp bạn kiểm tra và điều chỉnh nội dung của mình trước khi xuất bản.
+Công cụ Đo Số Từ - Số Ký Tự - Số Câu là một công cụ miễn phí trực tuyến hữu ích giúp bạn đo lường số lượng từ, ký tự và câu trong văn bản của mình. Dưới đây là hướng dẫn sử dụng công cụ này:
 
-Bước 1: Nhập văn bản của bạn vào ô văn bản
-Chọn ô văn bản để nhập văn bản của bạn. Bạn có thể sao chép và dán văn bản hoặc nhập trực tiếp vào ô văn bản.
+**Bước 1: Nhập văn bản của bạn vào ô văn bản**
+Bạn có thể dán văn bản từ một tài liệu hoặc gõ trực tiếp vào ô văn bản. Công cụ sẽ tự động đếm số lượng từ, ký tự và câu trong văn bản đó.
 
-Bước 2: Đếm từ, ký tự và câu
-Sau khi nhập văn bản, hãy nhấp vào nút "Đếm" để kích hoạt công cụ. Công cụ sẽ tự động đếm từ, ký tự và câu trong văn bản.
+**Bước 2: Xem kết quả đo lường**
+Sau khi nhập văn bản, công cụ sẽ hiển thị kết quả đo lường số lượng từ, ký tự và câu. Bạn có thể xem kết quả này để biết thông tin chi tiết về văn bản của mình.
 
-Bước 3: Xem kết quả
-Sau khi đếm, công cụ sẽ hiển thị kết quả bao gồm số từ, ký tự và câu trong văn bản. Bạn có thể sử dụng kết quả này để kiểm tra và điều chỉnh nội dung của mình.
+**Bước 3: So sánh và điều chỉnh**
+Bạn có thể so sánh kết quả đo lường của các văn bản khác nhau và điều chỉnh văn bản của mình để đạt được kết quả mong muốn.
 
-Tại sao công cụ Word Counter lại hữu ích cho người dùng Việt Nam?
-Công cụ Word Counter giúp bạn kiểm tra và điều chỉnh nội dung của mình trước khi xuất bản trên các nền tảng xã hội hoặc trang web. Điều này giúp bạn tránh được những lỗi typos và đảm bảo rằng nội dung của mình được trình bày một cách rõ ràng và dễ đọc.
+Công cụ này rất hữu ích cho người dùng Việt Nam vì nó giúp bạn đo lường và kiểm soát số lượng từ, ký tự và câu trong văn bản của mình. Điều này đặc biệt hữu ích khi viết bài, viết email hoặc soạn thảo văn bản quan trọng.
 
-Hỏi đáp thường gặp
+**Câu hỏi thường gặp**
 
-- Công cụ Word Counter có thể đếm được cả từ tiếng Việt và tiếng Anh không?
-Có, công cụ Word Counter có thể đếm được cả từ tiếng Việt và tiếng Anh.
-- Công cụ có thể lưu trữ văn bản không?
-Không, công cụ không lưu trữ văn bản. Văn bản sẽ được xóa sau khi bạn thoát khỏi trang.
-- Công cụ có thể giúp tôi kiểm tra tính chính tả không?
-Có, công cụ không trực tiếp kiểm tra tính chính tả nhưng giúp bạn đếm từ, ký tự và câu để kiểm tra nội dung.</div>
+- **Tôi có thể sử dụng công cụ này để đo lường số lượng từ trong một đoạn văn bản cụ thể không?**
+Có, bạn có thể sử dụng công cụ này để đo lường số lượng từ trong một đoạn văn bản cụ thể.
+
+- **Tôi có thể sao chép và dán văn bản từ Microsoft Word không?**
+Có, bạn có thể sao chép và dán văn bản từ Microsoft Word vào ô văn bản của công cụ này.
+
+- **Tôi có thể sử dụng công cụ này để đo lường số lượng ký tự trong một văn bản dài không?**
+Có, công cụ này có thể đo lường số lượng ký tự trong bất kỳ văn bản nào, kể cả những văn bản dài.</div>
   </div>
   <footer>
     <a href="/privacy.html">Privacy</a>

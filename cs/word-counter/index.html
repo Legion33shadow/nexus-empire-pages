@@ -3,12 +3,30 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Počítadlo slov — Slova Znaky Věty</title>
-<meta name="description" content="Free word counter — slova znaky věty. Okamžité, soukromé, založené na prohlížeči.">
+<title>using System;
+
+namespace WordCounter
+{
+    public enum Category { Words, Characters, Sentences };
+}</title>
+<meta name="description" content="using System;
+public class WordCounter
+{
+    public static string Description = &quot;words characters sentences&quot;;
+}">
 <link rel="canonical" href="https://omnitools.app/cs/word-counter/">
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"WebApplication",
-  "name":"Počítadlo slov — Slova Znaky Věty","description":"Free word counter — slova znaky věty. Okamžité, soukromé, založené na prohlížeči.",
+  "name":"using System;
+
+namespace WordCounter
+{
+    public enum Category { Words, Characters, Sentences };
+}","description":"using System;
+public class WordCounter
+{
+    public static string Description = &quot;words characters sentences&quot;;
+}",
   "applicationCategory":"UtilitiesApplication","operatingSystem":"Any",
   "offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}}
 </script>
@@ -55,43 +73,61 @@ input:focus,select:focus,textarea:focus{outline:none;border-color:var(--accent)}
 </head>
 <body>
 <div class="wrap">
-  <nav><a href="/cs/">&#8592; Domov</a></nav>
+  <nav><a href="/cs/">&#8592; hōm</a></nav>
   <div class="ad">[Advertisement]</div>
   <div class="card">
-    <h1>Počítadlo slov — Slova Znaky Věty</h1>
-    <p class="desc">Free word counter — slova znaky věty. Okamžité, soukromé, založené na prohlížeči.</p>
-    <textarea id="txt" placeholder="Sem vložte nebo napište svůj text..." style="height:150px;margin-bottom:14px"></textarea><div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:10px"><div style="background:#0b0c0e;padding:10px;border-radius:8px;text-align:center"><div style="font-size:1.5rem;font-weight:800;color:var(--accent)" id="wc">0</div><div style="font-size:.75rem;color:var(--muted)">Slova</div></div><div style="background:#0b0c0e;padding:10px;border-radius:8px;text-align:center"><div style="font-size:1.5rem;font-weight:800;color:var(--accent)" id="cc">0</div><div style="font-size:.75rem;color:var(--muted)">Postavy</div></div><div style="background:#0b0c0e;padding:10px;border-radius:8px;text-align:center"><div style="font-size:1.5rem;font-weight:800;color:var(--accent)" id="sc">0</div><div style="font-size:.75rem;color:var(--muted)">Věty</div></div><div style="background:#0b0c0e;padding:10px;border-radius:8px;text-align:center"><div style="font-size:1.5rem;font-weight:800;color:var(--accent)" id="pc">0</div><div style="font-size:.75rem;color:var(--muted)">Odstavce</div></div></div>
+    <h1>using System;
+
+namespace WordCounter
+{
+    public enum Category { Words, Characters, Sentences };
+}</h1>
+    <p class="desc">using System;
+public class WordCounter
+{
+    public static string Description = &quot;words characters sentences&quot;;
+}</p>
+    <textarea id="txt" placeholder="// C# code snippet
+string input = Console.ReadLine();
+Console.WriteLine(input);" style="height:150px;margin-bottom:14px"></textarea><div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:10px"><div style="background:#0b0c0e;padding:10px;border-radius:8px;text-align:center"><div style="font-size:1.5rem;font-weight:800;color:var(--accent)" id="wc">0</div><div style="font-size:.75rem;color:var(--muted)">Wörds</div></div><div style="background:#0b0c0e;padding:10px;border-radius:8px;text-align:center"><div style="font-size:1.5rem;font-weight:800;color:var(--accent)" id="cc">0</div><div style="font-size:.75rem;color:var(--muted)">// Character.cs
+public class Character 
+{
+    public string Name { get; set; }
+    public int Age { get; set; }
+}</div></div><div style="background:#0b0c0e;padding:10px;border-radius:8px;text-align:center"><div style="font-size:1.5rem;font-weight:800;color:var(--accent)" id="sc">0</div><div style="font-size:.75rem;color:var(--muted)">Console.WriteLine("Senzu");</div></div><div style="background:#0b0c0e;padding:10px;border-radius:8px;text-align:center"><div style="font-size:1.5rem;font-weight:800;color:var(--accent)" id="pc">0</div><div style="font-size:.75rem;color:var(--muted)">paragraphs</div></div></div>
     <div id="calc-result">—</div>
-    <button class="btn" onclick="calculate()">Vypočítat</button>
+    <button class="btn" onclick="calculate()">Console.WriteLine("Hesabat");</button>
   </div>
   <div class="ad">[Advertisement]</div>
   <div class="seo-card">
     <h2>&#9432; About</h2>
-    <div>Pomocné návodce k webovému nástroji "Word Counter — Slova, znaky, věty"
+    <div>Rychlý průvodce užíváním webového nástroje pro word counter
 
-Složité psaní textů, jako je psaní článků, zpráv nebo dopisů, může být někdy komplikované z hlediska kontroly obsahu a velikosti textu. V tomto případě je nástroj „Word Counter — Slova, znaky, věty“ velmi užitečným pomocníkem.
+Word counter je jednoduchý a volný nástroj, který vám pomůže spočítat počet slov, znaků a vět v textu. Je vhodný pro každého, kdo potřebuje rychle a snadno kontrolovat délku svého textu.
 
-**Krok 1: Převod textu do nástroje**
-Zkopírujte a vložte text, který chcete kontrolovat, do textového pole nástroje. Může se jednat o text z Vaši emailové schránky, dokumentu nebo jiného zdroje.
+Krok 1: Vložte text do políčka
+Navštivte webovou stránku s nástrojem word counter a vložte svůj text do políčka, které je umístěno na vrcholu stránky. Můžete vložit celý text nebo jen část, kterou chcete spočítat.
 
-**Krok 2: Vyberte měřítko**
-Vyberte, zda chcete měřit počet slov, znaků nebo věty. Nástroj vám poté zobrazí příslušné výsledky.
+Krok 2: Počítání textu
+Po vložení textu klikněte na tlačítko "Spočítej" a nástroj provede spočítání slov, znaků a vět v textu. Výsledky se zobrazí v tabulce dole na stránce.
 
-**Krok 3: Zkontrolujte výsledky**
-Zkontrolujte si výsledky, které nástroj nabídne. Můžete se rozhodnout, zda chcete svůj text upravit podle doporučených hodnot.
+Krok 3: Výsledky
+Výsledky spočítání se zobrazí v následujících kategoriích: počet slov, počet znaků a počet vět. Můžete si výsledky uložit nebo je použít jako reference pro další práci.
 
-Tento nástroj je velmi užitečným pomocníkem pro české uživatele, protože jim umožňuje snadno kontrolovat velikost textu a množství slov, které používají. To je zvláště důležité v případě psaní článků nebo zpráv, kde je často nutné dodržovat specifické limity.
+Důvody proč je word counter užitečný pro české uživatele:
+- Je volný a snadno dostupný
+- Nevyžaduje žádný registrace nebo instalaci
+- Je vhodný pro každého, kdo potřebuje rychle a snadno kontrolovat délku svého textu
 
-**Často kladené dotazy:**
+Frequently Asked Questions (FAQ):
 
-- Proč je počet slov tak důležitý?
-Odpověď: Počet slov je důležitý proto, aby text byl čitelný a účinný. Čím méně slov, tím lepší je čitelnost textu.
+- Můžu vložit text z jiného jazyka?
+- Ano, word counter podporuje texty v několika jazyky, včetně češtiny.
+- Je word counter bezpečný?
+- Ano, word counter je bezpečný a neobsahuje žádné malware nebo spyware.
 
-- Jak mohu upravit velikost textu?
-Odpověď: Můžete upravit velikost textu tím, že odstraníte nepotřebné slova nebo znaky.
-
-- Může být nástroj použit i pro jiné účely?
-Odpověď: Ano, nástroj může být použit i pro jiné účely, jako je například kontrola velikosti textu ve formulářích nebo zprávách.</div>
+- Můžu uložit výsledky?
+- Ano, můžete si výsledky uložit kliknutím na tlačítko "Ulož" vedle výsledků.</div>
   </div>
   <footer>
     <a href="/privacy.html">Privacy</a>

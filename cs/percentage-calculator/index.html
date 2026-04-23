@@ -3,12 +3,48 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Procentní kalkulačka — Slevy a změny</title>
-<meta name="description" content="Zdarma kalkulačka procent — slevy a změny. Okamžité, soukromé, založené na prohlížeči.">
+<title>using System;
+
+namespace PercentageCalculator
+{
+    public enum DiscountType { Percent, Decimal }
+}
+
+class Program
+{
+    static void Main()
+    {
+        Console.WriteLine(&quot;Percentage Calculator&quot;);
+        Console.WriteLine(&quot;---------------------&quot;);
+        Console.WriteLine(&quot;Discounts and Changes&quot;);
+        Console.WriteLine(&quot;---------------------&quot;);
+    }
+}</title>
+<meta name="description" content="// Free percentage calculator 
+// Discounts and changes
+// Instant, private, browser-based">
 <link rel="canonical" href="https://omnitools.app/cs/percentage-calculator/">
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"WebApplication",
-  "name":"Procentní kalkulačka — Slevy a změny","description":"Zdarma kalkulačka procent — slevy a změny. Okamžité, soukromé, založené na prohlížeči.",
+  "name":"using System;
+
+namespace PercentageCalculator
+{
+    public enum DiscountType { Percent, Decimal }
+}
+
+class Program
+{
+    static void Main()
+    {
+        Console.WriteLine(&quot;Percentage Calculator&quot;);
+        Console.WriteLine(&quot;---------------------&quot;);
+        Console.WriteLine(&quot;Discounts and Changes&quot;);
+        Console.WriteLine(&quot;---------------------&quot;);
+    }
+}","description":"// Free percentage calculator 
+// Discounts and changes
+// Instant, private, browser-based",
   "applicationCategory":"UtilitiesApplication","operatingSystem":"Any",
   "offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}}
 </script>
@@ -55,40 +91,83 @@ input:focus,select:focus,textarea:focus{outline:none;border-color:var(--accent)}
 </head>
 <body>
 <div class="wrap">
-  <nav><a href="/cs/">&#8592; Domov</a></nav>
+  <nav><a href="/cs/">&#8592; hōm</a></nav>
   <div class="ad">[Advertisement]</div>
   <div class="card">
-    <h1>Procentní kalkulačka — Slevy a změny</h1>
-    <p class="desc">Zdarma kalkulačka procent — slevy a změny. Okamžité, soukromé, založené na prohlížeči.</p>
-    <div class="form-g"><label>Typ výpočtu</label><select id="mode"><option value="pct_of">A % B</option><option value="what">A je kolik procent B</option><option value="change">% změny z A na B</option><option value="disc">Sleva: A% z ceny B</option></select></div><div class="form-g"><label>Hodnota A</label><input type="number" id="va" placeholder="25"></div><div class="form-g"><label>Hodnota B</label><input type="number" id="vb" placeholder="200"></div>
+    <h1>using System;
+
+namespace PercentageCalculator
+{
+    public enum DiscountType { Percent, Decimal }
+}
+
+class Program
+{
+    static void Main()
+    {
+        Console.WriteLine(&quot;Percentage Calculator&quot;);
+        Console.WriteLine(&quot;---------------------&quot;);
+        Console.WriteLine(&quot;Discounts and Changes&quot;);
+        Console.WriteLine(&quot;---------------------&quot;);
+    }
+}</h1>
+    <p class="desc">// Free percentage calculator 
+// Discounts and changes
+// Instant, private, browser-based</p>
+    <div class="form-g"><label>// Enum for calculation types
+public enum CalculationType 
+{
+    Addition,
+    Subtraction,
+    Multiplication,
+    Division
+};</label><select id="mode"><option value="pct_of">A * (double percent sign) is not a standard mathematical operator in C#. The double percent sign (%) is used for string concatenation or to indicate a percentage value in some contexts, but it's not typically used as an operator.
+
+If you want to represent "a percent of b" in C#, you could use the following:
+
+```csharp
+double result = (double)a / 100 * b;
+```
+
+Or, if you want to explicitly show that it's a percentage value:
+
+```csharp
+double result = (double)a / 100.0 * b;
+```</option><option value="what">Console.WriteLine("A je coj % B");</option><option value="change">// Percentage change between two values
+double GetPercentageChange(double valueA, double valueB) {
+    return (valueB - valueA) / valueA * 100;
+}</option><option value="disc">```csharp
+string discount = $"A{int.Parse("off")}% off price B";
+```</option></select></div><div class="form-g"><label>// Value A 
+
+```csharp
+string valueA = "Value A";
+```</label><input type="number" id="va" placeholder="25"></div><div class="form-g"><label>// Value B 
+
+```csharp
+string valueB = "Value B";
+```</label><input type="number" id="vb" placeholder="200"></div>
     <div id="calc-result">—</div>
-    <button class="btn" onclick="calculate()">Vypočítat</button>
+    <button class="btn" onclick="calculate()">Console.WriteLine("Hesabat");</button>
   </div>
   <div class="ad">[Advertisement]</div>
   <div class="seo-card">
     <h2>&#9432; About</h2>
-    <div>Průvodce uživatelem - kalkulačka s procenty
+    <div>Prostřednictvím online kalkulačky "Percentage Calculator — Slevy a změny" můžete snadno provádět srovnání cen, vypočítávat slevy nebo změnit procentuální hodnoty. 
 
-Je-li váš denní život plný transakcí a vyjednávání cen, možná jste někdy narazili na situaci, kdy jste museli spočítat procentuální změnu nebo slevu. Nemusíte se pak bát, protože existuje mnoho nástrojů, které vám mohou pomoci s tímto procesem. Jedním z nich je například "Kalkulačka s procenty - slevy a změny", která je dostupná zdarma na internetu.
+Krok 1: Vložte hodnotu, ke které chcete vypočítat procento. Můžete vložit číslo, například 100 nebo 200.
 
-Zde je krátký návod, jak používat tuto užitečnou kalkulačku:
+Krok 2: Vyberte typ operace, kterou chcete provést. Můžete vypočítat slevu, změnu nebo poměr v procentech.
 
-1. Na webovém stránce najděte políčka pro vstup hodnoty, procenta a výsledku. Vložte hodnoty do příslušných políček.
-2. Stiskněte tlačítko "Spočítat", aby se vaše hodnoty byly zpracovány a váš výsledek byl uveden.
-3. Pro vyhodnocení výsledku použijte kalkulačku jako pomocník při vyjednávání cen nebo při správném rozpočtu.
+Krok 3: Vložte požadované procento a klikněte na tlačítko "Vypočítat". Výsledek bude uveden v sekci "Výsledky".
 
-Pro české uživatele je tato kalkulačka velmi užitečná, protože umožňuje snadné spočítání slev a změn, které jsou běžné v denním životě. Je také možné ji použít při nákupu zboží nebo při vyjednávání cen služeb.
+Pro české uživatele je tato kalkulačka velmi užitečná, protože umožňuje snadno vypočítat slevy při nákupu zboží nebo služeb. Můžete také použít kalkulačku k vypočítání změny cen při změně cenových listů. 
 
-Základní otázky a odpovědi:
+Máte-li nějaké otázky, zde jsou odpovědi na některé časté dotazy:
 
-- Co je to kalkulačka s procenty?
-Kalkulačka s procenty je užitečný nástroj, který vám umožňuje snadno spočítat procentuální změnu nebo slevu.
-
-- Jak funguje kalkulačka?
-Kalkulačka vyžaduje vstup hodnoty, procenta a výsledku, které jsou poté zpracovány a výsledek je uveden.
-
-- Je kalkulačka zdarma?
-Ano, kalkulačka je dostupná zdarma na internetu.</div>
+- Jak funguje kalkulačka? Jakmile vložíte potřebné údaje a vyberete typ operace, kalkulačka vypočítá požadované procento.
+- Je kalkulačka zdarma? Ano, kalkulačka je zcela zdarma a můžete ji používat neomezeně.
+- Které jazyky jsou podporovány? Kalkulačka je dostupná v mnoha jazykových verzích, včetně češtiny.</div>
   </div>
   <footer>
     <a href="/privacy.html">Privacy</a>

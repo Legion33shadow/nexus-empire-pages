@@ -3,17 +3,17 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Véletlenszerű utazási cél generátor</title>
-<meta name="description" content="Ingyenes véletlenszerű úti cél generátor. Azonnali eredmények, működik a böngészőben.">
-<meta property="og:title" content="Véletlenszerű utazási cél generátor">
-<meta property="og:description" content="Ingyenes véletlenszerű úti cél generátor. Azonnali eredmények, működik a böngészőben.">
+<title>Havaijassa sijaitseva paikka</title>
+<meta name="description" content="Havaijaa: Vapaatarkoituksellinen matkailu-kohteeseen generaattori. Täytetään heti, toimii selaimessaasi.">
+<meta property="og:title" content="Havaijassa sijaitseva paikka">
+<meta property="og:description" content="Havaijaa: Vapaatarkoituksellinen matkailu-kohteeseen generaattori. Täytetään heti, toimii selaimessaasi.">
 <meta property="og:type" content="website">
 <link rel="canonical" href="https://omnitools.app/hu/travel-generator/">
 <link rel="alternate" hreflang="hu" href="https://omnitools.app/hu/travel-generator/">
 <link rel="alternate" hreflang="x-default" href="https://omnitools.app/en/travel-generator/">
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"WebApplication",
-  "name":"Véletlenszerű utazási cél generátor","description":"Ingyenes véletlenszerű úti cél generátor. Azonnali eredmények, működik a böngészőben.",
+  "name":"Havaijassa sijaitseva paikka","description":"Havaijaa: Vapaatarkoituksellinen matkailu-kohteeseen generaattori. Täytetään heti, toimii selaimessaasi.",
   "applicationCategory":"UtilitiesApplication","operatingSystem":"Any",
   "offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}}
 </script>
@@ -60,37 +60,48 @@ input:focus,select:focus,textarea:focus{outline:none;border-color:var(--accent)}
 </head>
 <body>
 <div class="wrap">
-  <nav><a href="/hu/">&#8592; Otthon</a></nav>
+  <nav><a href="/hu/">&#8592; Omā</a></nav>
   <div class="ad" id="ad-top">[Advertisement]</div>
   <div class="card">
-    <h1>Véletlenszerű utazási cél generátor</h1>
-    <p class="desc">Ingyenes véletlenszerű úti cél generátor. Azonnali eredmények, működik a böngészőben.</p>
+    <h1>Havaijassa sijaitseva paikka</h1>
+    <p class="desc">Havaijaa: Vapaatarkoituksellinen matkailu-kohteeseen generaattori. Täytetään heti, toimii selaimessaasi.</p>
     <div class="result-box" id="result">&#10024;</div>
-    <button class="btn" onclick="gen()">Generál</button>
-    <button class="btn btn-wa" onclick="shareWA()">&#128242; Oszd meg a WhatsApp-on</button>
+    <button class="btn" onclick="gen()">ĝeneriĝo</button>
+    <button class="btn btn-wa" onclick="shareWA()">&#128242; Żeleti na Facebooku.</button>
     <div class="hist" id="hist"></div>
   </div>
   <div class="ad" id="ad-mid">[Advertisement]</div>
   <div class="seo-card">
     <h2>&#9432; About</h2>
-    <div>A Random Travel Destination Generator használata:
-1. Kattintson a gombra, hogy azonnali eredményt kapjon.
-2. Új eredmény megjelenítéséhez kattintson újra.
-3. Másolja vagy ossza meg, amit szeretne.
+    <div>A Választott Úti Cél Generátor: Egy segítő kezes útikalauz
 
-Ez az eszköz 100%-ban ingyenes. Teljesen a böngészőjében működik. Nincs szükség fiókra. Nincs adat feltöltve.</div>
+A Random Travel Destination Generator egy ingyenes webes eszköz, amely segít kiválasztani a következő úti célját. Az eszköz a világ minden tájáról kínálja a választását, így mindig új és izgalmas helyet találhat. Itt az idő, hogy felfedezze a világot!
+
+3 lépés a Választott Úti Cél Generátor használatához:
+
+1. Lépjen be a Random Travel Destination Generator weboldalára, és kattintson a "New Destination" gombra.
+2. A generátor egy úti célt fog javasolni, amelyet alaposan böngészhet, és megtudhat többet az adott helyről.
+3. Ha megtetszett az úti cél, jegyezze fel, és alapozzon meg, hogy mikor és hogyan fog elutazni oda.
+
+Számunkra magyaroknak is nagyon hasznos lehet a Random Travel Destination Generator, hiszen segít új tájakat felfedezni, és a világ sok szépségét tapasztalhatjuk meg. A webes eszköz nemcsak az úti célokat generálja, hanem a választott helyről szóló információkat is megosztja, így alaposan tudunk tervezni az utazásunkhoz.
+
+Főbb kérdések:
+
+- Miért érdemes használni a Random Travel Destination Generátort? A válasz: mert új és izgalmas úti célokat találhat, és alaposan megismerheti az adott helyet.
+- Hogyan működik a generátor? A válasz: a felhasználó kattint a "New Destination" gombra, és a generátor egy úti célt fog javasolni.
+- A generátor ingyenes, de vannak-e más korlátozások? A válasz: a generátor teljesen ingyenes, és nincsenek más korlátozások.</div>
   </div>
   <div class="ad" id="ad-bot">[Advertisement]</div>
   <footer>
     <a href="/privacy.html">Privacy</a>
     <a href="/terms.html">Terms</a>
-    <a href="/hu/">Otthon</a>
+    <a href="/hu/">Omā</a>
   </footer>
 </div>
 <script>
-const D=["Feröer-szigetek – vad sziklák és viking csend", "Tbiliszi, Grúzia – ősi bor- és barlangvárosok", "Kotor, Montenegró - középkori öböl hegyekkel körülvéve", "Chefchaouen, Marokkó – a híres kék falu", "Luang Prabang, Laosz – aranytemplomok hajnalban", "Svaneti, Georgia - ősi kőtornyok a Kaukázusban", "Noto, Szicília — barokk katedrálisok és mandulás sütemények", "Plovdiv, Bulgária – Európa legrégebbi folyamatosan lakott városa", "Mostar, Bosznia – az ikonikus Stari Most híd", "Huacachina, Peru – Oázis sivatagi dűnékkel körülvéve", "Socotra-sziget, Jemen – idegen sárkányvérfák", "Madeira, Portugália – örök tavasz egy vulkáni szigeten", "Hvar, Horvátország — levendulamezők és kristálytiszta tenger", "Valletta, Málta – apró főváros, hatalmas barokk történelem", "Hallstatt, Ausztria – a képeslap-tökéletes tóparti falu", "Bagan, Mianmar – 3000 ősi pagoda napkeltekor", "Kappadókia, Törökország – hőlégballonok tündérkémények felett", "Sintra, Portugália — mesebeli paloták az erdőben", "Colmar, Elzász – az igazi mesebeli falu", "Okinawa, Japán – korallzátonyok és Ryukyu várromok", "Erdély, Románia — középkori városok és hegyi medvék", "Flores-sziget, Indonézia - rózsaszín strand és komodói sárkányok", "Göreme, Törökország — földalatti városok és barlangtemplomok", "Jiufen, Tajvan – lámpásokkal megvilágított hegyi teaházak", "Meteora, Görögország — kolostorok a függőleges szikla tetején"];
+const D=["Føroyar - villu klipper og vikingstil", "Tbilisi, Gruziya – ərişənəs və qalwə şəhərlər", "Kotor, Crna Gora — starinski zaliv okružen planinama", "Ħafna, Maroko — il famux blu vilajh", "Luang Prabang, Lao Sabaai - khouang phrao sa wina", "Svaneti, Gruziya - ələn qranit qalwələr Qərbi Kaukəs", "Noto, Sicilia - Barokka katedralid ja mandelipuud", "Plovdiv, Bulgaria — starostnaya kontinuyannoe naselennost v Evrope", "Mostar, Bjosnija — stari most mosta", "Huacachina, Peru — oazi sūraujos tarpėje", "Sokotra òtawŋ, Yémen — ʿalīn drāgōn blūd tīr", "Makeda, Portugali — ajáni keleti tavaszon vulkános szigeten", "Hvar, Kroacija - lavanda polja i kristalni čisto kraljice more", "Valletta, Malta — mali mikala, għoli storja barokka", "Hallstatt, Österreich — postkartenideális tóvillága", "Bagan, Myanmar — 3000 ancient pagodas at sunrise", "Kapadokya, Türkiye - sıcaklıkta balonlar overer yunus kaya", "Sintra, Portugál — prímnová palažia v lesnej skáre", "Kolumar, Alzas — īr reaļ faerij tal vīlėj", "Okinawa, Nihon — korallu reefu to Ruyūkyū kashi no kuni no kōen", "Transilvânia, România — orașe medievale și urși muntii", "Flores Island, Indonisia — punksa raga dan komodo drakon", "Göreme, Türkiye - unterirdische Städte und Höhlenkirchen", "Jiēfèn, Táiwān — guāngguāo shān zhōu chá jiǔdiàn", "Meteora, Hrvatska — samostane na vrhu vertikalnog kamena"];
 const H=[];
-const SM="Ingyenes eszk\u00f6z: Random Travel Destination Generator";
+const SM="Havaijassa vapaat\u00f6it\u00e4: S\u00e4hk\u00f6isesti generoitu matkailu-kohteeseen valitseva palvelu";
 function gen(){
   const r=D[Math.floor(Math.random()*D.length)];
   const el=document.getElementById('result');

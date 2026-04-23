@@ -3,12 +3,12 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Μετρητής λέξεων — Προτάσεις χαρακτήρων λέξεων</title>
-<meta name="description" content="Δωρεάν μετρητής λέξεων — λέξεις χαρακτήρες προτάσεις. Άμεση, ιδιωτική, βασισμένη σε πρόγραμμα περιήγησης.">
+<title>Contador de palabras — Palabras Caracteres Frases</title>
+<meta name="description" content="Counter de palabras libres — palabras caracteres oraciones. Instantáneo, privado, basado en navegador.">
 <link rel="canonical" href="https://omnitools.app/el/word-counter/">
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"WebApplication",
-  "name":"Μετρητής λέξεων — Προτάσεις χαρακτήρων λέξεων","description":"Δωρεάν μετρητής λέξεων — λέξεις χαρακτήρες προτάσεις. Άμεση, ιδιωτική, βασισμένη σε πρόγραμμα περιήγησης.",
+  "name":"Contador de palabras — Palabras Caracteres Frases","description":"Counter de palabras libres — palabras caracteres oraciones. Instantáneo, privado, basado en navegador.",
   "applicationCategory":"UtilitiesApplication","operatingSystem":"Any",
   "offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}}
 </script>
@@ -55,43 +55,43 @@ input:focus,select:focus,textarea:focus{outline:none;border-color:var(--accent)}
 </head>
 <body>
 <div class="wrap">
-  <nav><a href="/el/">&#8592; Σπίτι</a></nav>
+  <nav><a href="/el/">&#8592; El hogar</a></nav>
   <div class="ad">[Advertisement]</div>
   <div class="card">
-    <h1>Μετρητής λέξεων — Προτάσεις χαρακτήρων λέξεων</h1>
-    <p class="desc">Δωρεάν μετρητής λέξεων — λέξεις χαρακτήρες προτάσεις. Άμεση, ιδιωτική, βασισμένη σε πρόγραμμα περιήγησης.</p>
-    <textarea id="txt" placeholder="Επικολλήστε ή πληκτρολογήστε το κείμενό σας εδώ..." style="height:150px;margin-bottom:14px"></textarea><div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:10px"><div style="background:#0b0c0e;padding:10px;border-radius:8px;text-align:center"><div style="font-size:1.5rem;font-weight:800;color:var(--accent)" id="wc">0</div><div style="font-size:.75rem;color:var(--muted)">Λόγια</div></div><div style="background:#0b0c0e;padding:10px;border-radius:8px;text-align:center"><div style="font-size:1.5rem;font-weight:800;color:var(--accent)" id="cc">0</div><div style="font-size:.75rem;color:var(--muted)">Χαρακτήρες</div></div><div style="background:#0b0c0e;padding:10px;border-radius:8px;text-align:center"><div style="font-size:1.5rem;font-weight:800;color:var(--accent)" id="sc">0</div><div style="font-size:.75rem;color:var(--muted)">Προτάσεις</div></div><div style="background:#0b0c0e;padding:10px;border-radius:8px;text-align:center"><div style="font-size:1.5rem;font-weight:800;color:var(--accent)" id="pc">0</div><div style="font-size:.75rem;color:var(--muted)">Παράγραφοι</div></div></div>
+    <h1>Contador de palabras — Palabras Caracteres Frases</h1>
+    <p class="desc">Counter de palabras libres — palabras caracteres oraciones. Instantáneo, privado, basado en navegador.</p>
+    <textarea id="txt" placeholder="Si no está seguro, escriba en español y luego traducirá al francés" style="height:150px;margin-bottom:14px"></textarea><div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:10px"><div style="background:#0b0c0e;padding:10px;border-radius:8px;text-align:center"><div style="font-size:1.5rem;font-weight:800;color:var(--accent)" id="wc">0</div><div style="font-size:.75rem;color:var(--muted)">Palabras</div></div><div style="background:#0b0c0e;padding:10px;border-radius:8px;text-align:center"><div style="font-size:1.5rem;font-weight:800;color:var(--accent)" id="cc">0</div><div style="font-size:.75rem;color:var(--muted)">Caracteres</div></div><div style="background:#0b0c0e;padding:10px;border-radius:8px;text-align:center"><div style="font-size:1.5rem;font-weight:800;color:var(--accent)" id="sc">0</div><div style="font-size:.75rem;color:var(--muted)">sentenças</div></div><div style="background:#0b0c0e;padding:10px;border-radius:8px;text-align:center"><div style="font-size:1.5rem;font-weight:800;color:var(--accent)" id="pc">0</div><div style="font-size:.75rem;color:var(--muted)">Parágrafos</div></div></div>
     <div id="calc-result">—</div>
-    <button class="btn" onclick="calculate()">Υπολογίζω</button>
+    <button class="btn" onclick="calculate()">Calcular</button>
   </div>
   <div class="ad">[Advertisement]</div>
   <div class="seo-card">
     <h2>&#9432; About</h2>
-    <div>Ο οδηγός για το δωρεάν web εργαλείο "Word Counter — Στιγμές Κلمات Σentences"
+    <div>Οδηγός Χρήσης για το Word Counter
 
-Ο Word Counter είναι ένα χρήσιμο εργαλείο για την ανάλυση κειμένου, που σας επιτρέπει να μετράτε τον αριθμό των λέξεων, των χαρακτήρων και των πρότασης σε ένα κείμενο. Είναι ιδιαίτερα χρήσιμο για τους χρήστες που γράφουν στην ελληνική γλώσσα, καθώς επιτρέπει να ελέγχουν την κατάλληλη χρήση του λόγου και να βελτιώνουν την κριτική τους.
+Το Word Counter είναι ένας δωρεάν web εργαλείος που σας βοηθά να μετρήσετε τον αριθμό λέξεων, χαρακτήρων και προτάσεων σε ένα κείμενο. Είναι ένα χρήσιμο εργαλείο για τους χρήστες που χρειάζονται να προσδιορίσουν τη μορφολογία και τη δομή του κειμένου τους.
 
-Συνοδεύοντας τα χρήσιμα πεδία μετρήσεων, το Word Counter προσφέρει ένα απλό και γρήγορο τρόπο για να ελέγχετε την καταλληλότητα των κειμένων σας.
+Στεφάνε τα βήματα για να αρχίσετε να χρησιμοποιείτε το Word Counter:
 
-**Πώς να χρησιμοποιήσετε το Word Counter:**
+1. Βάλε το κείμενο σας στην επεξεργασία εδώ και βγάλτε τον αριθμό των λέξεων, χαρακτήρων και προτάσεων.
+2. Οριστετε το είδος του κειμένου σας (π.χ. άρθρο, διήγημα, διδακτικό κείμενο) για να λάβετε πιο ακριβείς αποτελέσματα.
+3. Ελέγχετε τους αριθμούς και αναφέρετε τις αναλυτικές πληροφορίες για να ενισχύσετε την επεξεργασία σας.
 
-1. Βάλε το κείμενο που θέλετε να μετρήσετε στη σχετικήboxes.
-2. Κάντε κλικ στο κουμπί "Count" για να αρχίσετε την ανάλυση.
-3. Βλέπετε τα αποτελέσματα, που περιλαμβάνουν τον αριθμό των λέξεων, των χαρακτήρων και των πρότασης.
+Το Word Counter είναι χρήσιμο για τους χρήστες που:
 
-**Γιατί είναι χρήσιμο για τους χρήστες της ελληνικής γλώσσας:**
+- Γράφουν για την ακαδημαϊκή έρευνα.
+- Επεξεργάζονται κείμενο για την δημοσίευση.
+- Θέλετε να μετρήσετε τον αριθμό λέξεων για την επιλογή του συντάκτη.
+- Χρειάζονται να μετρήσουν τον αριθμό προτάσεων για την κρίση της δομής.
 
-* Επιτρέπει να ελέγχουν την κατάλληλη χρήση του λόγου.
-* Βελτιώνει την κριτική και την ανάλυση του κειμένου.
-* Είναι ένα χρήσιμο εργαλείο για τους συγγραφείς, τους δημοσιογράφους και τους εκπαιδευτικούς.
+Συνήθεις Ερωτήσεις (FAQ):
 
-**Φrequently Asked Questions:**
-
-- Ποιος είναι ο αριθμός των λέξεων που μπορώ να μετρέσω;
-- Ο Word Counter υποστηρίζει μόνο την ελληνική γλώσσα;
-- Μπορώ να ανεβάσω ένα αρχείο κειμένου στον Word Counter;
-- Ποια είναι η μέγιστη δυνατή μεγέθους του κειμένου που μπορώ να ανεβάσω;
-- Μπορώ να στείλω το αποτέλεσμα μέσω email;</div>
+- Τι είναι η διαφορά μεταξύ λέξεων και χαρακτήρων;
+Απάντηση: Οι λέξεις είναι τα ονόματα, τα ρήματα, τα προσδιοριστικά κλπ. που σχηματίζουν το κείμενο, ενώ οι χαρακτήρες είναι τα γράμματα, τα σύμβολα και τα άλλοι τύποι αλφαβήτου.
+- Πώς μπορώ να μετρήσω τον αριθμό λέξεων σε ένα αρχείο;
+Απάντηση: Βάλε το περιεχόμενο του αρχείου στην επεξεργασία και μετρήστε τον αριθμό λέξεων.
+- Ποιος είναι ο σκοπός του Word Counter;
+Απάντηση: Ο σκοπός του Word Counter είναι να βοηθήσει τους χρήστες να μετρήσουν τον αριθμό λέξεων, χαρακτήρων και προτάσεων με ακριβείς και γρήγορες επιλογές.</div>
   </div>
   <footer>
     <a href="/privacy.html">Privacy</a>

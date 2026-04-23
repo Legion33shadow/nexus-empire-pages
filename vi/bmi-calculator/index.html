@@ -3,12 +3,12 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Công cụ tính chỉ số BMI — Chỉ số khối cơ thể</title>
-<meta name="description" content="Máy tính bmi miễn phí - chỉ số khối cơ thể. Tức thì, riêng tư, dựa trên trình duyệt.">
+<title>BMI Kalkulator — Tehty massiindeksi</title>
+<meta name="description" content="Free bmi kalcülyator - vücut ağırlığı endeks. Anında, özel, browser tabanlı.">
 <link rel="canonical" href="https://omnitools.app/vi/bmi-calculator/">
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"WebApplication",
-  "name":"Công cụ tính chỉ số BMI — Chỉ số khối cơ thể","description":"Máy tính bmi miễn phí - chỉ số khối cơ thể. Tức thì, riêng tư, dựa trên trình duyệt.",
+  "name":"BMI Kalkulator — Tehty massiindeksi","description":"Free bmi kalcülyator - vücut ağırlığı endeks. Anında, özel, browser tabanlı.",
   "applicationCategory":"UtilitiesApplication","operatingSystem":"Any",
   "offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}}
 </script>
@@ -55,50 +55,43 @@ input:focus,select:focus,textarea:focus{outline:none;border-color:var(--accent)}
 </head>
 <body>
 <div class="wrap">
-  <nav><a href="/vi/">&#8592; Trang chủ</a></nav>
+  <nav><a href="/vi/">&#8592; hōmē</a></nav>
   <div class="ad">[Advertisement]</div>
   <div class="card">
-    <h1>Công cụ tính chỉ số BMI — Chỉ số khối cơ thể</h1>
-    <p class="desc">Máy tính bmi miễn phí - chỉ số khối cơ thể. Tức thì, riêng tư, dựa trên trình duyệt.</p>
-    <div class="form-g"><label>Trọng lượng (kg)</label><input type="number" id="w" placeholder="70" min="1" max="400"></div><div class="form-g"><label>Chiều cao (cm)</label><input type="number" id="h" placeholder="175" min="50" max="250"></div>
+    <h1>BMI Kalkulator — Tehty massiindeksi</h1>
+    <p class="desc">Free bmi kalcülyator - vücut ağırlığı endeks. Anında, özel, browser tabanlı.</p>
+    <div class="form-g"><label>Pezhda (kg)</label><input type="number" id="w" placeholder="70" min="1" max="400"></div><div class="form-g"><label>Hejti (cm)</label><input type="number" id="h" placeholder="175" min="50" max="250"></div>
     <div id="calc-result">—</div>
-    <button class="btn" onclick="calculate()">Tính toán</button>
+    <button class="btn" onclick="calculate()">kalkulāt</button>
   </div>
   <div class="ad">[Advertisement]</div>
   <div class="seo-card">
     <h2>&#9432; About</h2>
-    <div>Hướng Dẫn Sử Dụng BMI Calculator
+    <div>Hướng Dẫn Sử Dụng Công Cụ Tính Chỉ Số Trọng Lượng Cơ Thể (BMI) Miễn Phí
 
-BMI Calculator là một công cụ trực tuyến miễn phí giúp bạn tính toán chỉ số khối cơ thể (BMI) một cách nhanh chóng và dễ dàng. Chỉ số BMI là một thước đo quan trọng để đánh giá tình trạng cân nặng của bạn, giúp bạn biết liệu bạn có cân nặng hợp lý hay không.
+Công cụ tính BMI là một công cụ trực tuyến miễn phí giúp bạn xác định chỉ số trọng lượng cơ thể (BMI) dựa trên chiều cao và cân nặng hiện tại. Chỉ số BMI là một công cụ đo lường hữu ích để đánh giá tình trạng sức khỏe của bạn.
 
-**Bước 1: Nhập chiều cao và cân nặng của bạn**
-Trên trang chủ của BMI Calculator, bạn sẽ được yêu cầu nhập chiều cao và cân nặng của mình. Hãy nhập số đo chiều cao của bạn bằng đơn vị mét (m) và cân nặng bằng đơn vị kilôgam (kg).
+**Bước 1: Nhập chiều cao**
+Đầu tiên, bạn cần nhập chiều cao của mình bằng đơn vị mét. Hãy nhập giá trị số vào ô "Chiều cao (cm)" hoặc "Chiều cao (m)".
 
-**Bước 2: Tính toán chỉ số BMI**
-Sau khi nhập thông tin, bạn sẽ có thể tính toán chỉ số BMI của mình. Chỉ số BMI sẽ được tính toán dựa trên công thức: BMI = cân nặng (kg) / (chiều cao (m))^2.
+**Bước 2: Nhập cân nặng**
+Tiếp theo, bạn cần nhập cân nặng của mình bằng đơn vị kg. Hãy nhập giá trị số vào ô "Cân nặng (kg)".
 
-**Bước 3: Xem kết quả và đánh giá**
-Sau khi tính toán, bạn sẽ thấy chỉ số BMI của mình được hiển thị trên màn hình. Bạn sẽ biết liệu bạn có cân nặng hợp lý hay không dựa trên thang điểm BMI sau: 
-- Dưới 18,5: Gầy
-- 18,5-22,9: Cân nặng hợp lý
-- 23-24,9: Béo phì nhẹ
-- 25-29,9: Béo phì
-- 30 trở lên: Béo phì nặng
+**Bước 3: Xác định chỉ số BMI**
+Sau khi nhập chiều cao và cân nặng, hãy nhấn nút "Tính BMI" để xem kết quả. Kết quả sẽ hiển thị chỉ số BMI của bạn cùng với phân loại tình trạng sức khỏe.
 
-Lý do BMI Calculator hữu ích cho người dùng Việt Nam:
-- Giúp bạn kiểm tra tình trạng cân nặng và có thể điều chỉnh thói quen ăn uống để đạt được cân nặng hợp lý.
-- Cung cấp thông tin hữu ích để bạn có thể theo dõi tiến trình giảm cân hoặc tăng cân một cách hiệu quả.
+Tại sao công cụ tính BMI lại hữu ích cho người dùng Việt Nam?
+- Công cụ tính BMI giúp bạn xác định tình trạng sức khỏe của mình một cách nhanh chóng và dễ dàng.
+- Chỉ số BMI giúp bạn theo dõi sự thay đổi về trọng lượng cơ thể qua thời gian.
+- Công cụ tính BMI miễn phí và dễ sử dụng.
 
-Câu hỏi thường gặp:
-
-- Tôi không biết cách tính toán chỉ số BMI.
-Trả lời: Chỉ số BMI được tính toán dựa trên công thức: BMI = cân nặng (kg) / (chiều cao (m))^2. Bạn có thể sử dụng công cụ trực tuyến này để tính toán dễ dàng.
-
-- Tôi có thể sử dụng BMI Calculator cho cả nam và nữ không?
-Trả lời: Có, BMI Calculator có thể được sử dụng cho cả nam và nữ.
-
-- Tôi có thể chia sẻ kết quả BMI với ai không?
-Trả lời: Bạn có thể chia sẻ kết quả BMI với bác sĩ hoặc chuyên gia sức khỏe để được tư vấn về tình trạng cân nặng của mình.</div>
+**Câu hỏi thường gặp:**
+- Tôi có thể sử dụng công cụ tính BMI cho trẻ em không? 
+Có, bạn có thể sử dụng công cụ tính BMI cho trẻ em, nhưng cần lưu ý rằng chỉ số BMI không phù hợp cho trẻ em dưới 18 tuổi.
+- Công cụ tính BMI có chính xác không? 
+Công cụ tính BMI dựa trên công thức chính xác, nhưng kết quả có thể bị ảnh hưởng bởi các yếu tố khác như tỷ lệ cơ thể và cơ cấu cân nặng.
+- Tôi có thể sử dụng công cụ tính BMI cho người bị bệnh không? 
+Nếu bạn bị bệnh, bạn nên tham khảo ý kiến của bác sĩ trước khi sử dụng công cụ tính BMI.</div>
   </div>
   <footer>
     <a href="/privacy.html">Privacy</a>

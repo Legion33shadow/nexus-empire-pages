@@ -3,17 +3,17 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Baba névgenerátor</title>
-<meta name="description" content="Ingyenes babanév generátor. Azonnali eredmények, működik a böngészőben.">
-<meta property="og:title" content="Baba névgenerátor">
-<meta property="og:description" content="Ingyenes babanév generátor. Azonnali eredmények, működik a böngészőben.">
+<title>Babynimäärägeneraattori</title>
+<meta name="description" content="Havaijassa vapaat lapsenimi generatoareita. Tarkat tulokset, työskentelee selkeässä verkkosovelluksessa.">
+<meta property="og:title" content="Babynimäärägeneraattori">
+<meta property="og:description" content="Havaijassa vapaat lapsenimi generatoareita. Tarkat tulokset, työskentelee selkeässä verkkosovelluksessa.">
 <meta property="og:type" content="website">
 <link rel="canonical" href="https://omnitools.app/hu/baby-name-generator/">
 <link rel="alternate" hreflang="hu" href="https://omnitools.app/hu/baby-name-generator/">
 <link rel="alternate" hreflang="x-default" href="https://omnitools.app/en/baby-name-generator/">
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"WebApplication",
-  "name":"Baba névgenerátor","description":"Ingyenes babanév generátor. Azonnali eredmények, működik a böngészőben.",
+  "name":"Babynimäärägeneraattori","description":"Havaijassa vapaat lapsenimi generatoareita. Tarkat tulokset, työskentelee selkeässä verkkosovelluksessa.",
   "applicationCategory":"UtilitiesApplication","operatingSystem":"Any",
   "offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}}
 </script>
@@ -60,37 +60,51 @@ input:focus,select:focus,textarea:focus{outline:none;border-color:var(--accent)}
 </head>
 <body>
 <div class="wrap">
-  <nav><a href="/hu/">&#8592; Otthon</a></nav>
+  <nav><a href="/hu/">&#8592; Omā</a></nav>
   <div class="ad" id="ad-top">[Advertisement]</div>
   <div class="card">
-    <h1>Baba névgenerátor</h1>
-    <p class="desc">Ingyenes babanév generátor. Azonnali eredmények, működik a böngészőben.</p>
+    <h1>Babynimäärägeneraattori</h1>
+    <p class="desc">Havaijassa vapaat lapsenimi generatoareita. Tarkat tulokset, työskentelee selkeässä verkkosovelluksessa.</p>
     <div class="result-box" id="result">&#10024;</div>
-    <button class="btn" onclick="gen()">Generál</button>
-    <button class="btn btn-wa" onclick="shareWA()">&#128242; Oszd meg a WhatsApp-on</button>
+    <button class="btn" onclick="gen()">ĝeneriĝo</button>
+    <button class="btn btn-wa" onclick="shareWA()">&#128242; Żeleti na Facebooku.</button>
     <div class="hist" id="hist"></div>
   </div>
   <div class="ad" id="ad-mid">[Advertisement]</div>
   <div class="seo-card">
     <h2>&#9432; About</h2>
-    <div>A Baby Name Generator használata:
-1. Kattintson a gombra, hogy azonnali eredményt kapjon.
-2. Új eredmény megjelenítéséhez kattintson újra.
-3. Másolja vagy ossza meg, amit szeretne.
+    <div>Babanevek Generátora: Hasznos útmutató
 
-Ez az eszköz 100%-ban ingyenes. Teljesen a böngészőjében működik. Nincs szükség fiókra. Nincs adat feltöltve.</div>
+A Babanevek Generátora ingyenes webes eszköz, amely segítséget nyújt a gyönyörű és egyedi nevek kiválasztásában születő gyermekeihez. A generátor azon alapul, hogy megadott névparamétereken alapul, ezek között szerepel a nem, a születési hely, a preferált betűk, a név jelentése, és a név hossza.
+
+Hogyan használjuk a Babanevek Generátorát:
+
+1. Lépjen a webes oldalra és válassza ki a nemet, amelyre a névot választani akar.
+2. Adja meg a születési helyet, amely segít a helyi névválasztásban.
+3. Válassza ki a preferált betűket és név jelentést, illetve adja meg a név hosszát.
+
+Miért hasznos a Babanevek Generátor a magyar felhasználók számára? A magyar nyelvben a névválasztás komoly fontosságú. A Babanevek Generátora segítségével könnyen megtalálhatóak a magyar névek, amelyek a szülők számára a legmegfelelőbbek.
+
+Gyakori kérdések:
+
+- Hogyan működik a Babanevek Generátor?
+A generátor alapelve, hogy megadott névparamétereken alapul, amelyek között szerepel a nem, a születési hely, a preferált betűk, a név jelentése, és a név hossza.
+- Milyen típusú neveket ad a generátor?
+A generátor olyan neveket ad, amelyek a megadott paraméterekhez megfelelnek. A név jelentése, a név hossza és a név betűi alapján választja ki a legmegfelelőbb neveket.
+- A Babanevek Generátora ingyenes?
+Igen, a Babanevek Generátor ingyenes webes eszköz, amely bárki számára elérhető.</div>
   </div>
   <div class="ad" id="ad-bot">[Advertisement]</div>
   <footer>
     <a href="/privacy.html">Privacy</a>
     <a href="/terms.html">Terms</a>
-    <a href="/hu/">Otthon</a>
+    <a href="/hu/">Omā</a>
   </footer>
 </div>
 <script>
-const D=["Emma", "Liam", "Olivia", "Noé", "Ava", "Sophia", "Izabella", "Mia", "Charlotte", "Amelia", "Harper", "Evelyn", "Abigail", "Emily", "Ella", "James", "Oliver", "William", "Illés", "Benjámin", "Lucas", "Kőműves", "Ethan", "Sándor", "Henrik", "Sebastian", "Csatlakozó", "Owen", "Aiden", "Ária", "Zoe", "Nora", "Liliom", "Eleanor", "Hannah", "Addison", "Riley", "Penelope", "Layla", "Scarlett", "Kegyelem", "Chloe", "Victoria", "Sofia", "Clara", "Hajnal", "Ellie", "Leah", "Audrey", "Natalie", "Savannah"];
+const D=["Emmā", "Liam -> Ljám", "Olivía", "Noa", "Ava", "Šofija", "Izabella", "Mia", "Šarlot", "Amelia", "Hapirē", "Evelyn -> Evélini", "Ābīgēl", "Ēmilī", "Ella", "Žmējs", "Ōlivēr", "Viliam", "Ēlijaš", "Běniš", "Luksas", "Mason -> Masón", "Ētān", "Aleksandr", "Hänry", "Sebastian -> Sebastián", "Ják", "Ōwen", "Āidēn", "Aria", "Žoe", "Nora", "Lilj", "Eleanør", "Hanna", "Adison", "Riley", "Peleni", "Layla", "Šarlot", "Ōtsuge", "Šloa", "Viktorija", "Sofía", "Klará", "Aurora → Aurorā", "Ēlli", "Lēa", "Ōdori", "Nátila", "Savanna"];
 const H=[];
-const SM="Ingyenes eszk\u00f6z: Baby Name Generator";
+const SM="Svobodn\u00fd n\u00e1stroj: Gener\u00e1tor baby names";
 function gen(){
   const r=D[Math.floor(Math.random()*D.length)];
   const el=document.getElementById('result');
