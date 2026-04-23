@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Trình tạo thử thách ngẫu nhiên cho bạn bè</title>
+<meta name="description" content="Trình tạo thử thách ngẫu nhiên miễn phí cho bạn bè. Kết quả tức thì, hoạt động trong trình duyệt của bạn.">
+<meta property="og:title" content="Trình tạo thử thách ngẫu nhiên cho bạn bè">
+<meta property="og:description" content="Trình tạo thử thách ngẫu nhiên miễn phí cho bạn bè. Kết quả tức thì, hoạt động trong trình duyệt của bạn.">
+<meta property="og:type" content="website">
+<link rel="canonical" href="https://omnitools.app/vi/challenge-generator/">
+<link rel="alternate" hreflang="vi" href="https://omnitools.app/vi/challenge-generator/">
+<link rel="alternate" hreflang="x-default" href="https://omnitools.app/en/challenge-generator/">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebApplication",
+  "name":"Trình tạo thử thách ngẫu nhiên cho bạn bè","description":"Trình tạo thử thách ngẫu nhiên miễn phí cho bạn bè. Kết quả tức thì, hoạt động trong trình duyệt của bạn.",
+  "applicationCategory":"UtilitiesApplication","operatingSystem":"Any",
+  "offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}}
+</script>
+<style>:root{--bg:#0d0d0e;--card:#16171a;--text:#eaeaea;--muted:#9aa0a6;--accent:#00ffcc;--btn:#00ffcc}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:system-ui,-apple-system,sans-serif;background:var(--bg);color:var(--text);
+     min-height:100vh;display:flex;flex-direction:column;align-items:center;padding:12px}
+.wrap{width:100%;max-width:760px}
+nav{padding:10px 0;font-size:.9rem}nav a{color:var(--muted);text-decoration:none}
+.card{background:var(--card);border-radius:18px;padding:28px 20px;
+      box-shadow:0 8px 32px rgba(0,0,0,.45);margin-bottom:14px}
+h1{font-size:1.5rem;color:var(--accent);margin-bottom:6px}
+.desc{color:var(--muted);font-size:.92rem;margin-bottom:18px}
+.result-box{background:#0b0c0e;border:1px solid #252629;border-radius:12px;
+            padding:16px;font-size:1.4rem;font-weight:800;min-height:56px;
+            word-break:break-word;transition:opacity .18s;margin-bottom:14px}
+.btn{display:block;width:100%;border:0;border-radius:999px;padding:14px;
+     background:var(--btn);color:#001;font-weight:800;font-size:1rem;cursor:pointer;
+     margin-bottom:10px;transition:transform .12s}
+.btn:active{transform:scale(.97)}
+.btn-wa{background:#1fad54;color:#fff;font-weight:600;font-size:.92rem}
+.hist{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
+.hist span{background:#1c1d20;border-radius:20px;padding:4px 12px;
+           font-size:.8rem;color:var(--muted);cursor:pointer}
+.hist span:hover{color:var(--accent)}
+.ad{width:100%;min-height:90px;background:#111315;border:1px dashed #272829;
+    border-radius:10px;display:flex;align-items:center;justify-content:center;
+    color:var(--muted);font-size:.78rem;margin:10px 0}
+.seo-card{background:var(--card);border-radius:14px;padding:24px 20px;
+          font-size:.88rem;line-height:1.72;color:#c8c8c8;white-space:pre-wrap}
+.seo-card h2{color:var(--accent);font-size:1rem;margin-bottom:10px}
+footer{margin:20px 0;color:var(--muted);font-size:.75rem;text-align:center}
+footer a{color:var(--muted);margin:0 6px}
+.form-g{margin-bottom:14px}
+label{display:block;margin-bottom:5px;color:var(--muted);font-size:.88rem}
+input[type=number],select,textarea{width:100%;padding:11px;background:#0b0c0e;
+  border:1px solid #252629;color:#fff;border-radius:10px;font-size:.95rem}
+input:focus,select:focus,textarea:focus{outline:none;border-color:var(--accent)}
+#calc-result{font-size:1.6rem;font-weight:800;color:var(--accent);padding:14px;
+             background:#0b0c0e;border-radius:10px;margin:14px 0;text-align:center;
+             min-height:52px}
+@media(max-width:480px){h1{font-size:1.25rem}.result-box{font-size:1.15rem}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <nav><a href="/vi/">&#8592; Trang chủ</a></nav>
+  <div class="ad" id="ad-top">[Advertisement]</div>
+  <div class="card">
+    <h1>Trình tạo thử thách ngẫu nhiên cho bạn bè</h1>
+    <p class="desc">Trình tạo thử thách ngẫu nhiên miễn phí cho bạn bè. Kết quả tức thì, hoạt động trong trình duyệt của bạn.</p>
+    <div class="result-box" id="result">&#10024;</div>
+    <button class="btn" onclick="gen()">Phát ra</button>
+    <button class="btn btn-wa" onclick="shareWA()">&#128242; Chia sẻ trên WhatsApp</button>
+    <div class="hist" id="hist"></div>
+  </div>
+  <div class="ad" id="ad-mid">[Advertisement]</div>
+  <div class="seo-card">
+    <h2>&#9432; About</h2>
+    <div>Hướng Dẫn Sử Dụng Công Cụ "Random Challenge Generator for Friends"
+
+Công cụ này được thiết kế để mang lại những trải nghiệm thú vị và mới lạ cho bạn và bạn bè. Với công cụ này, bạn có thể tạo ra những thách thức ngẫu nhiên để thử sức và tạo ra những kỷ niệm tuyệt vời.
+
+Cách Sử Dụng Công Cụ:
+
+Bước 1: Truy cập vào trang web của công cụ và nhấp vào nút "Tạo Thách Thức Ngẫu Nhiên".
+
+Bước 2: Chọn loại thách thức bạn muốn tạo, chẳng hạn như "Thách thức thể thao", "Thách thức trí tuệ" hoặc "Thách thức giải trí".
+
+Bước 3: Nhập vào số lượng thách thức bạn muốn tạo và nhấp vào nút "Tạo". Công cụ sẽ tự động tạo ra những thách thức ngẫu nhiên cho bạn.
+
+Tại Sao Công Cụ Này Là Rất Hữu Ích Cho Người Việt:
+
+Công cụ này rất hữu ích cho người Việt vì nó giúp tạo ra những trải nghiệm mới lạ và thú vị cho bạn và bạn bè. Nó cũng giúp tạo ra những kỷ niệm tuyệt vời và mang lại những cảm giác hạnh phúc.
+
+Câu Hỏi Thường Gặp:
+
+- Tôi có thể sử dụng công cụ này miễn phí không?
+Có, công cụ này hoàn toàn miễn phí.
+
+- Tôi có thể chỉnh sửa thách thức sau khi tạo không?
+Không, công cụ này tạo ra thách thức ngẫu nhiên và không cho phép chỉnh sửa.
+
+- Tôi có thể sử dụng công cụ này trên điện thoại di động không?
+Có, công cụ này có thể sử dụng trên cả máy tính và điện thoại di động.</div>
+  </div>
+  <div class="ad" id="ad-bot">[Advertisement]</div>
+  <footer>
+    <a href="/privacy.html">Privacy</a>
+    <a href="/terms.html">Terms</a>
+    <a href="/vi/">Trang chủ</a>
+  </footer>
+</div>
+<script>
+const D=["Chống đẩy 20 cái ngay bây giờ", "Gửi tin nhắn thoại với giọng hài hước", "Ăn đồ cay mà không cần nước", "Giữ tư thế plank trong 60 giây", "Nói ngược bảng chữ cái trong 30 giây", "Hôm nay khen ngợi 3 người", "Thực hiện 10 cú nhảy", "Nhắn tin cho ai đó mà bạn nhớ", "Chỉ nói trong câu hỏi trong 5 phút", "Chụp ảnh bầu trời và chia sẻ nó", "Viết tên bạn bằng tay không thuận", "Kể một câu chuyện cười cho người tiếp theo bạn gặp", "Đi chân trần ra ngoài trong 2 phút", "Làm bánh sandwich với các nguyên liệu ngẫu nhiên", "Hãy uống một cốc nước đầy ngay bây giờ", "Ngồi trên tường trong 1 phút", "Miêu tả một ngày của bạn chỉ bằng 5 từ", "Gọi cho ai đó mà bạn đã không nói chuyện trong 6 tháng", "Viết 3 điều tốt đẹp về bản thân", "Chụp ảnh cùng người lạ (lịch sự)", "Học 5 từ trong ngôn ngữ mà bạn không biết"];
+const H=[];
+const SM="C\u00f4ng c\u1ee5 mi\u1ec5n ph\u00ed: Tr\u00ecnh t\u1ea1o th\u1eed th\u00e1ch ng\u1eabu nhi\u00ean cho b\u1ea1n b\u00e8";
+function gen(){
+  const r=D[Math.floor(Math.random()*D.length)];
+  const el=document.getElementById('result');
+  el.style.opacity='0';
+  setTimeout(()=>{el.textContent=r;el.style.opacity='1';},130);
+  H.unshift(r);if(H.length>6)H.pop();
+  document.getElementById('hist').innerHTML=
+    H.map(x=>`<span onclick="document.getElementById('result').textContent=this.textContent">${x}</span>`).join('');
+}
+function shareWA(){
+  const r=document.getElementById('result').textContent;
+  window.open('https://wa.me/?text='+encodeURIComponent(SM+'\n\n'+r),'_blank');
+}
+if('serviceWorker' in navigator)navigator.serviceWorker.register('/sw.js').catch(()=>{});
+gen();
+</script>
+</body>
+</html>

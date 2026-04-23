@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>এলোমেলো ভ্রমণ গন্তব্য জেনারেটর</title>
+<meta name="description" content="বিনামূল্যে র্যান্ডম ভ্রমণ গন্তব্য জেনারেটর. তাত্ক্ষণিক ফলাফল, আপনার ব্রাউজারে কাজ করে।">
+<meta property="og:title" content="এলোমেলো ভ্রমণ গন্তব্য জেনারেটর">
+<meta property="og:description" content="বিনামূল্যে র্যান্ডম ভ্রমণ গন্তব্য জেনারেটর. তাত্ক্ষণিক ফলাফল, আপনার ব্রাউজারে কাজ করে।">
+<meta property="og:type" content="website">
+<link rel="canonical" href="https://omnitools.app/bn/travel-generator/">
+<link rel="alternate" hreflang="bn" href="https://omnitools.app/bn/travel-generator/">
+<link rel="alternate" hreflang="x-default" href="https://omnitools.app/en/travel-generator/">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebApplication",
+  "name":"এলোমেলো ভ্রমণ গন্তব্য জেনারেটর","description":"বিনামূল্যে র্যান্ডম ভ্রমণ গন্তব্য জেনারেটর. তাত্ক্ষণিক ফলাফল, আপনার ব্রাউজারে কাজ করে।",
+  "applicationCategory":"UtilitiesApplication","operatingSystem":"Any",
+  "offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}}
+</script>
+<style>:root{--bg:#0d0d0e;--card:#16171a;--text:#eaeaea;--muted:#9aa0a6;--accent:#00ffcc;--btn:#00ffcc}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:system-ui,-apple-system,sans-serif;background:var(--bg);color:var(--text);
+     min-height:100vh;display:flex;flex-direction:column;align-items:center;padding:12px}
+.wrap{width:100%;max-width:760px}
+nav{padding:10px 0;font-size:.9rem}nav a{color:var(--muted);text-decoration:none}
+.card{background:var(--card);border-radius:18px;padding:28px 20px;
+      box-shadow:0 8px 32px rgba(0,0,0,.45);margin-bottom:14px}
+h1{font-size:1.5rem;color:var(--accent);margin-bottom:6px}
+.desc{color:var(--muted);font-size:.92rem;margin-bottom:18px}
+.result-box{background:#0b0c0e;border:1px solid #252629;border-radius:12px;
+            padding:16px;font-size:1.4rem;font-weight:800;min-height:56px;
+            word-break:break-word;transition:opacity .18s;margin-bottom:14px}
+.btn{display:block;width:100%;border:0;border-radius:999px;padding:14px;
+     background:var(--btn);color:#001;font-weight:800;font-size:1rem;cursor:pointer;
+     margin-bottom:10px;transition:transform .12s}
+.btn:active{transform:scale(.97)}
+.btn-wa{background:#1fad54;color:#fff;font-weight:600;font-size:.92rem}
+.hist{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
+.hist span{background:#1c1d20;border-radius:20px;padding:4px 12px;
+           font-size:.8rem;color:var(--muted);cursor:pointer}
+.hist span:hover{color:var(--accent)}
+.ad{width:100%;min-height:90px;background:#111315;border:1px dashed #272829;
+    border-radius:10px;display:flex;align-items:center;justify-content:center;
+    color:var(--muted);font-size:.78rem;margin:10px 0}
+.seo-card{background:var(--card);border-radius:14px;padding:24px 20px;
+          font-size:.88rem;line-height:1.72;color:#c8c8c8;white-space:pre-wrap}
+.seo-card h2{color:var(--accent);font-size:1rem;margin-bottom:10px}
+footer{margin:20px 0;color:var(--muted);font-size:.75rem;text-align:center}
+footer a{color:var(--muted);margin:0 6px}
+.form-g{margin-bottom:14px}
+label{display:block;margin-bottom:5px;color:var(--muted);font-size:.88rem}
+input[type=number],select,textarea{width:100%;padding:11px;background:#0b0c0e;
+  border:1px solid #252629;color:#fff;border-radius:10px;font-size:.95rem}
+input:focus,select:focus,textarea:focus{outline:none;border-color:var(--accent)}
+#calc-result{font-size:1.6rem;font-weight:800;color:var(--accent);padding:14px;
+             background:#0b0c0e;border-radius:10px;margin:14px 0;text-align:center;
+             min-height:52px}
+@media(max-width:480px){h1{font-size:1.25rem}.result-box{font-size:1.15rem}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <nav><a href="/bn/">&#8592; বাড়ি</a></nav>
+  <div class="ad" id="ad-top">[Advertisement]</div>
+  <div class="card">
+    <h1>এলোমেলো ভ্রমণ গন্তব্য জেনারেটর</h1>
+    <p class="desc">বিনামূল্যে র্যান্ডম ভ্রমণ গন্তব্য জেনারেটর. তাত্ক্ষণিক ফলাফল, আপনার ব্রাউজারে কাজ করে।</p>
+    <div class="result-box" id="result">&#10024;</div>
+    <button class="btn" onclick="gen()">তৈরি করুন</button>
+    <button class="btn btn-wa" onclick="shareWA()">&#128242; হোয়াটসঅ্যাপে শেয়ার করুন</button>
+    <div class="hist" id="hist"></div>
+  </div>
+  <div class="ad" id="ad-mid">[Advertisement]</div>
+  <div class="seo-card">
+    <h2>&#9432; About</h2>
+    <div>র্যান্ডম ট্রাভেল ডেস্টিনেশন জেনারেটর কীভাবে ব্যবহার করবেন:
+1. একটি তাত্ক্ষণিক ফলাফল পেতে বোতামটি ক্লিক করুন৷
+2. একটি নতুন ফলাফলের জন্য আবার ক্লিক করুন.
+3. আপনি যা পছন্দ করেন তা অনুলিপি করুন বা ভাগ করুন৷
+
+এই টুল 100% বিনামূল্যে. এটি সম্পূর্ণরূপে আপনার ব্রাউজারে কাজ করে। কোনো অ্যাকাউন্টের প্রয়োজন নেই। কোন তথ্য আপলোড করা হয় না.</div>
+  </div>
+  <div class="ad" id="ad-bot">[Advertisement]</div>
+  <footer>
+    <a href="/privacy.html">Privacy</a>
+    <a href="/terms.html">Terms</a>
+    <a href="/bn/">বাড়ি</a>
+  </footer>
+</div>
+<script>
+const D=["ফ্যারো দ্বীপপুঞ্জ - বন্য ক্লিফ এবং ভাইকিং নীরবতা", "তিবিলিসি, জর্জিয়া - প্রাচীন ওয়াইন এবং গুহা শহর", "কোটর, মন্টিনিগ্রো - পর্বত দ্বারা বেষ্টিত মধ্যযুগীয় উপসাগর", "Chefchaouen, মরক্কো - বিখ্যাত নীল গ্রাম", "লুয়াং প্রাবাং, লাওস - ভোরবেলা সোনার মন্দির", "স্যাভেনেটি, জর্জিয়া - ককেশাসে প্রাচীন পাথরের টাওয়ার", "নোটো, সিসিলি — বারোক ক্যাথেড্রাল এবং বাদাম পেস্ট্রি", "প্লোভডিভ, বুলগেরিয়া — ইউরোপের প্রাচীনতম ক্রমাগত বসতিপূর্ণ শহর", "মোস্টার, বসনিয়া — আইকনিক স্টারি মোস্ট ব্রিজ", "হুয়াকাচিনা, পেরু - মরুভূমির টিলা দ্বারা বেষ্টিত মরূদ্যান", "সোকোট্রা দ্বীপ, ইয়েমেন - এলিয়েন ড্রাগন রক্ত ​​গাছ", "মাদেইরা, পর্তুগাল - একটি আগ্নেয় দ্বীপে অনন্ত বসন্ত", "হাভার, ক্রোয়েশিয়া — ল্যাভেন্ডার ক্ষেত্র এবং স্ফটিক পরিষ্কার সমুদ্র", "ভ্যালেটা, মাল্টা — ক্ষুদ্র রাজধানী, বিশাল বারোক ইতিহাস", "হলস্ট্যাট, অস্ট্রিয়া — পোস্টকার্ড-নিখুঁত লেক গ্রাম", "বাগান, মায়ানমার — সূর্যোদয়ের সময় 3000 প্রাচীন প্যাগোডা", "ক্যাপাডোসিয়া, তুরস্ক — পরী চিমনির উপরে গরম বাতাসের বেলুন", "সিন্ট্রা, পর্তুগাল - বনে রূপকথার প্রাসাদ", "কলমার, আলসেস - আসল রূপকথার গ্রাম", "ওকিনাওয়া, জাপান — প্রবাল প্রাচীর এবং রিউকিউ দুর্গের ধ্বংসাবশেষ", "ট্রান্সিলভেনিয়া, রোমানিয়া - মধ্যযুগীয় শহর এবং পর্বত ভাল্লুক", "ফ্লোরেস দ্বীপ, ইন্দোনেশিয়া — গোলাপী সৈকত এবং কমোডো ড্রাগন", "গোরেম, তুরস্ক - ভূগর্ভস্থ শহর এবং গুহা গীর্জা", "জিউফেন, তাইওয়ান — লণ্ঠন জ্বলে পাহাড়ি চা ঘর", "Meteora, গ্রীস — উল্লম্ব পাথরের উপরে মঠ"];
+const H=[];
+const SM="\u09ac\u09bf\u09a8\u09be\u09ae\u09c2\u09b2\u09cd\u09af\u09c7\u09b0 \u099f\u09c1\u09b2: \u098f\u09b2\u09cb\u09ae\u09c7\u09b2\u09cb \u09ad\u09cd\u09b0\u09ae\u09a3 \u0997\u09a8\u09cd\u09a4\u09ac\u09cd\u09af \u099c\u09c7\u09a8\u09be\u09b0\u09c7\u099f\u09b0";
+function gen(){
+  const r=D[Math.floor(Math.random()*D.length)];
+  const el=document.getElementById('result');
+  el.style.opacity='0';
+  setTimeout(()=>{el.textContent=r;el.style.opacity='1';},130);
+  H.unshift(r);if(H.length>6)H.pop();
+  document.getElementById('hist').innerHTML=
+    H.map(x=>`<span onclick="document.getElementById('result').textContent=this.textContent">${x}</span>`).join('');
+}
+function shareWA(){
+  const r=document.getElementById('result').textContent;
+  window.open('https://wa.me/?text='+encodeURIComponent(SM+'\n\n'+r),'_blank');
+}
+if('serviceWorker' in navigator)navigator.serviceWorker.register('/sw.js').catch(()=>{});
+gen();
+</script>
+</body>
+</html>
